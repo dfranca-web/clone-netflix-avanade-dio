@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <link href="./css/global.css" rel="stylesheet" type="text/css" />
+  <link crossorigin="anonymous"
+        href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css"
+        rel="stylesheet" />
+  <title>Netflix Redesign</title>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <a href="/">
+        <img alt="Netflix" src="./img/netflix.png" width="100" />
+      </a>
+
+      <div class="box-main-menu">
+        <nav>
+          <ul>
+            <li class="active">
+              <a href="#" title="Home">Home</a>
+            </li>
+            <li>
+              <a href="#" title="Filmes">Filmes</a>
+            </li>
+            <li>
+              <a href="#" title="Séries">Séries</a>
+            </li>
+            <li>
+              <a href="#" title="Originais">
+                <img alt="Netflix"
+                     src="./img/netflix-initial-letter.png"
+                     width="16" />
+                Originais
+              </a>
+            </li>
+            <li>
+              <a href="#" title="Search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" title="Alert">
+                <i class="fa-solid fa-bell"></i>
+              </a>
+            </li>
+            <li class="menu-user">
+              <a href="#" title="Diego F Santos">
+                Diego F Santos
+                <i class="fa-solid fa-chevron-down"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="banner swiffy-slider">
+      <ul class="slider-container">
+        <li>
+          <div class="banner-item"
+               id="banner-1"
+               style="background-image: url('./img/movies/rampage/cover.jpg');">
+            <video preload="auto" src="./video/rampage/video.mp4"></video>
+            <div class="container">
+              <article class="box-info">
+                <p>Duração: 1h 47m</p>
+                <p class="classification">
+                  <span class="rating">
+                    <i class="fa-solid fa-star"></i> 6.5
+                  </span>
+                  <span>Ação</span>
+                  <i class="fa-solid fa-minus"></i>
+                  <span>Aventura</span>
+                  <i class="fa-solid fa-minus"></i>
+                  <span>Ficção científica</span>
+                </p>
+                <h2>Rampage: Destruição Total</h2>
+                <p class="description">
+                  Davis Okoye é um primatologista, um homem recluso que compartilha um vínculo inabalável com George, um gorila muito inteligente que está sob seus cuidados desde o nascimento.
+                </p>
+
+                <p class="control-buttons">
+                  <button class="btn btn-primary" role="button" type="button">
+                    <i class="fa-solid fa-play"></i>
+                    Assistir
+                  </button>
+
+                  <button class="btn btn-secondary-contrast"
+                          role="button"
+                          type="button">
+                    <i class="fa-solid fa-plus"></i>
+                    Adicionar à Lista
+                  </button>
+
+                  <button class="btn btn-secondary-contrast btn-icon trailer"
+                          onclick="watchTrailer(1)"
+                          role="button"
+                          type="button">
+                    <i class="fa-solid fa-film"></i>
+                  </button>
+
+                  <button class="btn btn-secondary-contrast btn-icon like"
+                          role="button"
+                          type="button">
+                    <i class="fa-regular fa-thumbs-up"></i>
+                  </button>
+
+                  <button class="btn btn-secondary-contrast btn-icon no-like"
+                          role="button"
+                          type="button">
+                    <i class="fa-regular fa-thumbs-down"></i>
+                  </button>
+                </p>
+              </article>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="banner-item"
+               id="banner-2"
+               style="background-image: url('./img/movies/velozes-e-furiosos-10/cover.jpg');">
+            <video preload="auto" src="./video/velozes-furiosos-10/video.mp4">
+            </video>
+            <div class="container">
+              <article class="box-info">
+                <p>Duração: 2h 20m</p>
+                <p class="classification">
+                  <span class="rating">
+                    <i class="fa-solid fa-star"></i> 7.1
+                  </span>
+                  <span>Ação</span>
+                  <i class="fa-solid fa-minus"></i>
+                  <span>Crime</span>
+                  <i class="fa-solid fa-minus"></i>
+                  <span>Thriller</span>
+                </p>
+                <h2>Velozes e Furiosos 10</h2>
+                <p class="description">
+                  O fim da estrada está chegando. Velozes & Furiosos 10, é o décimo filme da franquia Velozes & Furiosos, lança os capítulos finais de uma grande saga, uma das mais famosas e populares do cinema, agora com sua terceira década e ainda mais forte.
+                </p>
+
+                <p class="control-buttons">
+                  <button class="btn btn-primary" role="button" type="button">
+                    <i class="fa-solid fa-play"></i>
+                    Assistir
+                  </button>
+
+                  <button class="btn btn-secondary-contrast"
+                          role="button"
+                          type="button">
+                    <i class="fa-solid fa-plus"></i>
+                    Adicionar à Lista
+                  </button>
+
+                  <button class="btn btn-secondary-contrast btn-icon trailer"
+                          onclick="watchTrailer(2)"
+                          role="button"
+                          type="button">
+                    <i class="fa-solid fa-film"></i>
+                  </button>
+
+                  <button class="btn btn-secondary-contrast btn-icon like"
+                          role="button"
+                          type="button">
+                    <i class="fa-regular fa-thumbs-up"></i>
+                  </button>
+
+                  <button class="btn btn-secondary-contrast btn-icon no-like"
+                          role="button"
+                          type="button">
+                    <i class="fa-regular fa-thumbs-down"></i>
+                  </button>
+                </p>
+              </article>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="banner-item"
+               id="banner-3"
+               style="background-image: url('./img/movies/missao-impossivel-efeito-fallout/cover.jpg');">
+            <video controls
+                   preload="auto"
+                   src="./video/missao-impossivel-efeito-fallout/video.mp4">
+            </video>
+            <div class="container">
+              <article class="box-info">
+                <p>Duração: 2h 27m</p>
+                <p class="classification">
+                  <span class="rating">
+                    <i class="fa-solid fa-star"></i> 7.4
+                  </span>
+                  <span>Ação</span>
+                  <i class="fa-solid fa-minus"></i>
+                  <span>Aventura</span>
+                </p>
+                <h2>Missão: Impossível - Efeito Fallout</h2>
+                <p class="description">
+                  Em uma perigosa tarefa para recuperar plutônio roubado, Ethan Hunt opta por salvar sua equipe em vez de completar a missão. Com isso, armas nucleares caem nas mãos de agentes altamente qualificados e que pertencem a uma rede mortal que deseja destruir a civilização.
+                </p>
+
+                <p class="control-buttons">
+                  <button class="btn btn-primary" role="button" type="button">
+                    <i class="fa-solid fa-play"></i>
+                    Assistir
+                  </button>
+
+                  <button class="btn btn-secondary-contrast"
+                          role="button"
+                          type="button">
+                    <i class="fa-solid fa-plus"></i>
+                    Adicionar à Lista
+                  </button>
+
+                  <button class="btn btn-secondary-contrast btn-icon trailer"
+                          onclick="watchTrailer(3)"
+                          role="button"
+                          type="button">
+                    <i class="fa-solid fa-film"></i>
+                  </button>
+
+                  <button class="btn btn-secondary-contrast btn-icon like"
+                          role="button"
+                          type="button">
+                    <i class="fa-regular fa-thumbs-up"></i>
+                  </button>
+
+                  <button class="btn btn-secondary-contrast btn-icon no-like"
+                          role="button"
+                          type="button">
+                    <i class="fa-regular fa-thumbs-down"></i>
+                  </button>
+                </p>
+              </article>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="banner-item"
+               id="banner-4"
+               style="background-image: url('./img/movies/ghostbusters/cover.jpg');">
+            <video controls preload="auto" src="./video/ghostbusters/video.mp4">
+            </video>
+            <div class="container">
+              <article class="box-info">
+                <p>Duração: 1h 55m</p>
+                <p class="classification">
+                  <span class="rating">
+                    <i class="fa-solid fa-star"></i> 6.7
+                  </span>
+                  <span>Aventura</span>
+                  <i class="fa-solid fa-minus"></i>
+                  <span>Comédia</span>
+                  <i class="fa-solid fa-minus"></i>
+                  <span>Fantasia</span>
+                  <i class="fa-solid fa-minus"></i>
+                  <span>Ficção científica</span>
+                </p>
+                <h2>Ghostbusters - Apocalipse de Gelo</h2>
+                <p class="description">
+                  Nesta sequência da franquia Ghostbusters, a família Spengler retorna para onde tudo começou: a famosa estação de bombeiros em Nova York. Eles pretendem se unir com os caça-fantasmas originais que desenvolveram um laboratório ultra secreto de pesquisa para levar a caça aos fantasmas a outro nível, mas quando a descoberta de um artefato antigo libera uma grande força do mal, os Ghostbusters das duas gerações precisam juntar as forças para proteger suas casas e salvar o mundo de uma segunda Era do Gelo.
+                </p>
+
+                <p class="control-buttons">
+                  <button class="btn btn-primary" role="button" type="button">
+                    <i class="fa-solid fa-play"></i>
+                    Assistir
+                  </button>
+
+                  <button class="btn btn-secondary-contrast"
+                          role="button"
+                          type="button">
+                    <i class="fa-solid fa-plus"></i>
+                    Adicionar à Lista
+                  </button>
+
+                  <button class="btn btn-secondary-contrast btn-icon trailer"
+                          onclick="watchTrailer(4)"
+                          role="button"
+                          type="button">
+                    <i class="fa-solid fa-film"></i>
+                  </button>
+
+                  <button class="btn btn-secondary-contrast btn-icon like"
+                          role="button"
+                          type="button">
+                    <i class="fa-regular fa-thumbs-up"></i>
+                  </button>
+
+                  <button class="btn btn-secondary-contrast btn-icon no-like"
+                          role="button"
+                          type="button">
+                    <i class="fa-regular fa-thumbs-down"></i>
+                  </button>
+                </p>
+              </article>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="banner-item"
+               id="banner-5"
+               style="background-image: url('./img/movies/godzilla-e-kong-o-novo-imperio/cover.jpg');">
+            <video controls
+                   preload="auto"
+                   src="./video/godzilla-e-kong-o-novo-imperio/video.mp4">
+            </video>
+            <div class="container">
+              <article class="box-info">
+                <p>Duração: 1h 55m</p>
+                <p class="classification">
+                  <span class="rating">
+                    <i class="fa-solid fa-star"></i> 7.2
+                  </span>
+                  <span>Ação</span>
+                  <i class="fa-solid fa-minus"></i>
+                  <span>Aventura</span>
+                  <i class="fa-solid fa-minus"></i>
+                  <span>Ficção científica</span>
+                </p>
+                <h2>Godzilla e Kong: O Novo Império</h2>
+                <p class="description">
+                  O poderoso Kong e o temível Godzilla se unem contra uma colossal ameaça mortal escondida no mundo dos humanos, que ameaça a existência de sua espécie e da nossa. Mergulhando profundamente nos mistérios da Ilha da Caveira e nas origens da Terra Oca, o filme irá explorar a antiga batalha de Titãs que ajudou a forjar esses seres extraordinários e os ligou à humanidade para sempre.
+                </p>
+
+                <p class="control-buttons">
+                  <button class="btn btn-primary" role="button" type="button">
+                    <i class="fa-solid fa-play"></i>
+                    Assistir
+                  </button>
+
+                  <button class="btn btn-secondary-contrast"
+                          role="button"
+                          type="button">
+                    <i class="fa-solid fa-plus"></i>
+                    Adicionar à Lista
+                  </button>
+
+                  <button class="btn btn-secondary-contrast btn-icon trailer"
+                          onclick="watchTrailer(5)"
+                          role="button"
+                          type="button">
+                    <i class="fa-solid fa-film"></i>
+                  </button>
+
+                  <button class="btn btn-secondary-contrast btn-icon like"
+                          role="button"
+                          type="button">
+                    <i class="fa-regular fa-thumbs-up"></i>
+                  </button>
+
+                  <button class="btn btn-secondary-contrast btn-icon no-like"
+                          role="button"
+                          type="button">
+                    <i class="fa-regular fa-thumbs-down"></i>
+                  </button>
+                </p>
+              </article>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <button class="slider-nav" type="button"></button>
+      <button class="slider-nav slider-nav-next" type="button"></button>
+      <div class="slider-indicators">
+        <button class="active"></button>
+        <button></button>
+        <button></button>
+        <button></button>
+        <button></button>
+      </div>
+    </section>
+  </main>
+  <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js">
+  </script>
+  <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+  <script crossorigin="anonymous"
+          defer
+          src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js">
+  </script>
+  <script src="./js/tooltip.js" type="text/javascript"></script>
+  <script src="./js/watch-trailer.js" type="text/javascript"></script>
+  <script src="./js/swiffy-slider.js" type="text/javascript"></script>
+</body>
+</html>

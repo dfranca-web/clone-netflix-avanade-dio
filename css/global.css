@@ -1,0 +1,34 @@
+@import url('./reset.css');
+@import url('./awesome.min.css');
+@import url('./font.css');
+@import url('./variables.css');
+@import url('./title.css');
+@import url('./buttons.css');
+@import url('./header.css');
+@import url('./banner.css');
+@import url('./swiffy-slider.css');
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Roboto", Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  background-color: var(--background);
+}
+
+main {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  padding: 0 22px;
+}

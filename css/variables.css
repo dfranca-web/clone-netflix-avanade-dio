@@ -1,0 +1,13 @@
+:root {
+  --primary-black: #131113;
+  --primary-black-alpha: #1311130c;
+  --primary-black-2: #121414;
+  --primary-black-3: #2c2d2c;
+  --primary-red: #e50914;
+  --primary-red-2: #cf0d15;
+  --primary-red-3: #b1060f;
+  --primary-white: #e4e2e2;
+  --primary-white-alpha: #e4e2e224;
+  --primary-white-hover: #ffffff;
+  --background: #131113;
+}

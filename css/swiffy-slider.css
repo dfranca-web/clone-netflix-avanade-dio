@@ -1,0 +1,4 @@
+.slider-indicators,
+.slider-nav {
+  z-index: 10;
+}
